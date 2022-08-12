@@ -10,6 +10,10 @@ html {
   margin: 0;
 }
 
+body {
+  background-color: #EFEDEC;
+}
+
 body,
 button,
 a {
@@ -33,7 +37,7 @@ ul, li {
 h1,
 h2,
 h3 {
-  font-weight: normal;
+  font-weight: lighter;
   font-family: "Marcellus", serif;
 }
 
@@ -52,12 +56,18 @@ h3 {
 
 .text {
   font-size: 20px;
+  padding: 0 0 40px 0;
 }
 .text--dark {
   color: #6B7689;
 }
 .text--light {
   color: #EFEDEC;
+}
+
+.text--first-paragraph,
+.link {
+  padding: 40px 0;
 }
 
 .navbar {
@@ -91,7 +101,45 @@ section {
   font-size: 20px;
 }
 
-.home__text, .home__link {
+.navbar-home {
+  background-color: 0%;
+  position: absolute;
+}
+
+.navbar {
+  height: 48px;
+  width: 100%;
+  color: #634B45;
+  border-bottom: solid 1px #634B45;
+  display: flex;
+  align-items: center;
+}
+.navbar__logo {
+  flex-basis: 50%;
+}
+.navbar__menu {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar a {
+  color: #634B45;
+}
+.navbar a:hover {
+  color: #BF6F71;
+}
+
+.cta {
+  padding: 40px 0;
+  background-size: cover;
+}
+.cta--center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cta .subtitle,
+.cta .button-container {
   padding: 40px 0;
 }
 
@@ -125,7 +173,6 @@ section {
   display: flex;
   padding-top: 80px;
   padding-bottom: 80px;
-  background-color: #EFEDEC;
 }
 .home-about__image-container, .home-about__text-container {
   flex-basis: 50%;
@@ -138,7 +185,7 @@ section {
 .home-story {
   padding-left: 250px;
   padding-right: 250px;
-  background-image: url(/images/home__story.png);
+  background-image: url(/images/background__powder.png);
   background-size: cover;
   text-align: center;
 }
@@ -147,7 +194,6 @@ section {
 }
 
 .home-services {
-  background-color: #EFEDEC;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -172,29 +218,16 @@ section {
   background-color: white;
 }
 
-.navbar-home {
-  background-color: 0%;
-  position: absolute;
-}
-
-.navbar {
-  height: 48px;
-  width: 100%;
-  color: #634B45;
+.about-content {
   display: flex;
-  align-items: center;
 }
-.navbar__logo {
+.about-content__image-container, .about-content__text-container {
   flex-basis: 50%;
 }
-.navbar__menu {
-  flex-basis: 50%;
-  display: flex;
-  justify-content: space-between;
+.about-content__image {
+  width: 80%;
+  border-radius: 10px;
 }
-.navbar a {
-  color: #634B45;
-}
-.navbar a:hover {
-  color: #BF6F71;
+.about .cta {
+  background-image: url(/images/background__powder.png);
 }/*# sourceMappingURL=style.css.map */

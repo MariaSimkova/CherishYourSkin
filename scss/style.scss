@@ -3,8 +3,10 @@
 @use 'abstracts/mixins';
 @use 'components/buttons';
 
+@use 'layout/navbar';
+@use 'layout/cta';
+
 @use 'pages/home';
 @use 'pages/about';
 
-@use 'layout/navbar';
 

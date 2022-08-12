@@ -1,0 +1,18 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+.cta {
+
+    padding: 40px 0;
+    background-size: cover;
+
+    &--center {
+        @include mixins.center;
+    }
+
+    .subtitle,
+    .button-container {
+        padding:40px 0;
+    }
+
+}

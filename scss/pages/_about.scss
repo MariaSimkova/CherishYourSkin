@@ -1,2 +1,25 @@
 @use '../abstracts/variables';
 @use '../abstracts/mixins';
+
+.about {
+
+    &-content {
+        display: flex;
+
+        &__image-container,
+        &__text-container {
+            flex-basis: 50%;
+        }
+
+        &__image {
+            width: 80%;
+            border-radius: 10px;
+        }
+    }
+
+    .cta {
+        background-image: url(/images/background__powder.png);
+    }
+
+}
+
