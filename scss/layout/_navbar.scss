@@ -2,15 +2,18 @@
 @use '../abstracts/mixins';
 
 .navbar-home {
-    background-color: 0%;
+    // background-color: 0%;
     position: absolute;
+}
+
+.navbar-border {
+    border-bottom: solid 1px variables.$color__navbar;
 }
 
 .navbar {
     height: 48px;
     width: 100%;
     color: variables.$color__navbar;
-    border-bottom: solid 1px variables.$color__navbar;
 
     display: flex;
     align-items: center;

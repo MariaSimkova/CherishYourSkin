@@ -1,7 +1,8 @@
 @use '../abstracts/variables';
 @use '../abstracts/mixins';
 
-.about {
+.about,
+.story {
 
     &-content {
         display: flex;
@@ -15,10 +16,6 @@
             width: 80%;
             border-radius: 10px;
         }
-    }
-
-    .cta {
-        background-image: url(/images/background__powder.png);
     }
 
 }

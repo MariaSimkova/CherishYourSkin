@@ -56,7 +56,7 @@ h3 {
 
 .text {
   font-size: 20px;
-  padding: 0 0 40px 0;
+  padding: 0 0 30px 0;
 }
 .text--dark {
   color: #6B7689;
@@ -67,7 +67,7 @@ h3 {
 
 .text--first-paragraph,
 .link {
-  padding: 40px 0;
+  padding: 30px 0;
 }
 
 .navbar {
@@ -102,15 +102,17 @@ section {
 }
 
 .navbar-home {
-  background-color: 0%;
   position: absolute;
+}
+
+.navbar-border {
+  border-bottom: solid 1px #634B45;
 }
 
 .navbar {
   height: 48px;
   width: 100%;
   color: #634B45;
-  border-bottom: solid 1px #634B45;
   display: flex;
   align-items: center;
 }
@@ -130,7 +132,6 @@ section {
 }
 
 .cta {
-  padding: 40px 0;
   background-size: cover;
 }
 .cta--center {
@@ -141,6 +142,14 @@ section {
 .cta .subtitle,
 .cta .button-container {
   padding: 40px 0;
+}
+
+.about .cta {
+  background-image: url(/images/background__powder.png);
+}
+
+.story .cta {
+  background-image: url(/images/background__skin.png);
 }
 
 .home-hero {
@@ -218,16 +227,17 @@ section {
   background-color: white;
 }
 
-.about-content {
+.about-content,
+.story-content {
   display: flex;
 }
-.about-content__image-container, .about-content__text-container {
+.about-content__image-container, .about-content__text-container,
+.story-content__image-container,
+.story-content__text-container {
   flex-basis: 50%;
 }
-.about-content__image {
+.about-content__image,
+.story-content__image {
   width: 80%;
   border-radius: 10px;
-}
-.about .cta {
-  background-image: url(/images/background__powder.png);
 }/*# sourceMappingURL=style.css.map */
