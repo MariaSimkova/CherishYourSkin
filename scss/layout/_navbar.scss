@@ -4,6 +4,14 @@
 .navbar-home {
     // background-color: 0%;
     position: absolute;
+
+    .navbar__logo {
+        flex-basis: 10%;
+    }
+
+    .navbar__menu {
+        flex-basis: 60%;
+    }
 }
 
 .navbar-border {

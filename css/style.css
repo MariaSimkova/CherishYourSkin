@@ -87,15 +87,15 @@ section {
   color: #EFEDEC;
 }
 .button--large {
-  width: 220px;
-  padding: 15px 20px;
+  width: 250px;
+  padding: 18px 20px;
   background-color: #9D645F;
   color: #EFEDEC;
-  font-size: 20px;
+  font-size: 22px;
 }
 .button--small {
-  width: 180px;
-  padding: 10px 20px;
+  width: 200px;
+  padding: 13px 18px;
   background-color: #7F8DA3;
   color: #EFEDEC;
   font-size: 20px;
@@ -103,6 +103,12 @@ section {
 
 .navbar-home {
   position: absolute;
+}
+.navbar-home .navbar__logo {
+  flex-basis: 10%;
+}
+.navbar-home .navbar__menu {
+  flex-basis: 60%;
 }
 
 .navbar-border {
@@ -153,12 +159,11 @@ section {
 }
 
 .home-hero {
-  padding-top: 48px;
+  padding-top: 120px;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background-image: url(/images/home__hero.png);
+  background-image: url(/images/home__hero\(couple\).png);
   background-size: cover;
   background-attachment: fixed;
   background-position: top center;
@@ -191,15 +196,25 @@ section {
   border-radius: 10px;
 }
 
-.home-story {
-  padding-left: 250px;
-  padding-right: 250px;
-  background-image: url(/images/background__powder.png);
-  background-size: cover;
+.home-articles {
+  padding: 0;
   text-align: center;
+  display: flex;
 }
-.home-story .home__link:hover {
+.home-articles .link:hover {
   color: #EFEDEC;
+}
+.home-articles__story, .home-articles__acne {
+  flex-basis: 50%;
+  padding: 100px 50px;
+}
+.home-articles__story {
+  background-image: url(/images/home-story1.png);
+  background-size: cover;
+}
+.home-articles__acne {
+  background-image: url(/images/home-story2.png);
+  background-size: cover;
 }
 
 .home-services {

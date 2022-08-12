@@ -6,15 +6,15 @@
 
 .home-hero {
 
-    padding-top: 48px;
+    padding-top: 120px;
     // height: 700px;
     height: 100vh;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
 
-    background-image: url(/images/home__hero.png);
+    background-image: url(/images/home__hero\(couple\).png);
 	background-size: cover;
 	background-attachment: fixed;
     background-position: top center;
@@ -64,18 +64,34 @@
 
 
 // SKIN STORY
-.home-story {
-
-    padding-left: 250px;
-    padding-right: 250px;
-
-    background-image: url(/images/background__powder.png);
-    background-size: cover;
+.home-articles {
+    padding: 0;
+    // background-image: url(/images/background__powder.png);
+    // background-size: cover;
 
     text-align: center;
 
-    .home__link:hover {
+    .link:hover {
         color: variables.$color--light;
+    }
+
+    display: flex;
+
+    &__story,
+    &__acne {
+        flex-basis: 50%;
+        padding: 100px 50px;
+        // padding-right: 50px;
+    }
+
+    &__story {
+        background-image: url(/images/home-story1.png);
+        background-size: cover;
+    }
+
+    &__acne {
+        background-image: url(/images/home-story2.png);
+        background-size: cover;
     }
 
 }
