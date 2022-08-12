@@ -43,6 +43,11 @@ h3 {
 
 .subtitle {
   font-size: 32px;
+  color: #BF6F71;
+  padding-bottom: 20px;
+}
+.subtitle--light {
+  color: #EFEDEC;
 }
 
 .text {
@@ -86,13 +91,6 @@ section {
   font-size: 20px;
 }
 
-.home__subtitle {
-  color: #BF6F71;
-  padding-bottom: 20px;
-}
-.home__subtitle--light {
-  color: #EFEDEC;
-}
 .home__text, .home__link {
   padding: 40px 0;
 }

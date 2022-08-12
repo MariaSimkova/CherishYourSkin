@@ -1,5 +1,5 @@
-@use 'abstracts/variables';
-@use 'abstracts/mixins';
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
 
 html { box-sizing: border-box; }
 *, ::after, ::before { box-sizing: inherit; }
@@ -41,6 +41,12 @@ h3 {
 
 .subtitle {
   font-size: 32px;
+  color: variables.$color--primary;
+  padding-bottom: 20px;
+
+  &--light {
+    color: variables.$color--light;
+  }
 }
 
 .text {

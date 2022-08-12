@@ -1,18 +1,18 @@
-@use 'abstracts/variables';
-@use 'abstracts/mixins';
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
 
 .home {
     
-    &__subtitle {
+    // &__subtitle {
 
-        color: variables.$color--primary;
-        padding-bottom: 20px;
+    //     // color: variables.$color--primary;
+    //     // padding-bottom: 20px;
 
-        &--light {
-            color: variables.$color--light;
-        }
+    //     // &--light {
+    //     //     color: variables.$color--light;
+    //     // }
 
-    }
+    // }
 
     &__text,
     &__link {
