@@ -1,0 +1,65 @@
+@use 'abstracts/variables';
+@use 'abstracts/mixins';
+
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+* {
+  margin: 0;
+}
+
+body,
+button,
+a {
+  font-family: variables.$font__text;
+}
+
+a,
+a:hover {
+  color: variables.$color__navbar;
+  text-decoration: none;
+}
+
+a:hover {
+  color: variables.$color--primary;
+}
+
+ul, li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: normal;
+  font-family: variables.$font__title;
+}
+
+.title {
+  font-size: 48px;
+}
+
+.subtitle {
+  font-size: 32px;
+}
+
+.text {
+
+  font-size: 20px;
+  
+  &--dark {
+  color: variables.$color--secondary-dark;
+  }
+
+  &--light {
+    color: variables.$color--light;
+  }
+}
+
+.navbar{
+  padding: 0 120px;
+}
+
+section {
+  padding: 80px 120px;
+}

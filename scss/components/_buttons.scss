@@ -1,0 +1,29 @@
+@use 'abstracts/variables';
+@use 'abstracts/mixins';
+
+.button {
+
+    display: block;
+    border-radius: 10px;
+    text-align: center;
+
+    &:hover {
+        color: variables.$color--light;
+    }
+    
+    &--large {
+        width: 220px;
+        padding: 15px 20px;
+        background-color: variables.$color--primary-dark;
+        color: variables.$color--light;
+        font-size: 20px;
+    }
+
+    &--small {
+        width: 180px;
+        padding: 10px 20px;
+        background-color: variables.$color--secondary;
+        color: variables.$color--light;
+        font-size: 20px;
+    }
+}
