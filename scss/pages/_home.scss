@@ -6,13 +6,13 @@
 
 .home-hero {
 
-    padding-top: 120px;
+    padding: 120px 100px;
     // height: 700px;
     height: 100vh;
 
     display: flex;
     flex-direction: column;
-    // justify-content: center;
+    justify-content: center;
 
     background-image: url(/images/home__hero\(couple\).png);
 	background-size: cover;
@@ -22,8 +22,8 @@
     &__title,
     &__slogan,
     .button-container {
-        padding: 30px 0;
-        width: 40%;
+        padding: 30px;
+        width: 35%;
     }
 
     &__title {
@@ -120,6 +120,7 @@
 
         width: 300px;
         margin: 30px;
+        background-color: white;
         box-shadow: 4px 4px 10px variables.$color--secondary-shadow;
 
         &-title {
@@ -127,7 +128,7 @@
             text-align: center;
             color: variables.$color--secondary-dark;
             font-size: 20px;
-            background-color: white;
+
         }
     }
 

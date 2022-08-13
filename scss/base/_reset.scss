@@ -41,15 +41,23 @@ h3 {
 
 .title {
   font-size: 48px;
+
+  &--center {
+    text-align: center;
+  }
 }
 
 .subtitle {
-  font-size: 32px;
+  font-size: 34px;
   color: variables.$color--primary;
   padding-bottom: 20px;
 
   &--light {
     color: variables.$color--light;
+  }
+
+  &--center {
+    text-align: center;
   }
 }
 

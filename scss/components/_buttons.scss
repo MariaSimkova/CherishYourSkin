@@ -26,4 +26,12 @@
         color: variables.$color--light;
         font-size: 20px;
     }
+
+    &--card {
+        width: 150px;
+        padding: 10px 15px;
+        background-color: variables.$color--primary;
+        color: variables.$color--light;
+        font-size: 18px;
+    }
 }
