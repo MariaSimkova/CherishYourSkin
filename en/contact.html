@@ -3,4 +3,46 @@ layout: layouts/en-layout.njk
 title: Cherish your skin
 ---
 
-<p>Contact</p>
+<section class="contact">
+
+    <h1 class="title title--center">Book an appointment</h1>
+
+    <div class="contact-form">
+
+        <div class="contact-form__input">
+            <label for="name">Full name</label>
+            <input type="text" name="name" id="name">
+        </div>
+
+        <div class="contact-form__input">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div class="contact-form__input">
+
+            <label for="service">Service</label>
+
+            <select name="service" id="service">
+                <option>Click to choose a service</option>
+                <option value="online-60">Online consultation (60 min • €100)</option>
+                <option value="online-90">Online consultation (90 min • €150)</option>
+                <option value="email-1">Email consultation (1 week • €100)</option>
+                <option value="email-2">Email consultation (2 weeks • €150)</option>
+                <option value="education">Skin education (€300)</option>
+            </select>
+
+        </div>
+
+        <div class="contact-form__input">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Describe your needs"></textarea>
+        </div>
+
+        <div class="button-container">
+            <button type="submit" name="send" id="send" class="button button--small">SUBMIT</button>
+        </div>
+
+    </div>
+
+</section>

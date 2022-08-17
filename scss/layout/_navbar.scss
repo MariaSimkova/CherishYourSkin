@@ -12,6 +12,16 @@
     .navbar__menu {
         flex-basis: 60%;
     }
+
+    @include mixins.large-desktop {
+        .navbar__logo {
+            flex-basis: 10%;
+        }
+    
+        .navbar__menu {
+            flex-basis: 50%;
+        }
+    }
 }
 
 .navbar-border {

@@ -43,6 +43,7 @@ h3 {
 
 .title {
   font-size: 48px;
+  color: #BF6F71;
 }
 .title--center {
   text-align: center;
@@ -110,7 +111,7 @@ section {
   width: 150px;
   padding: 10px 15px;
   background-color: #BF6F71;
-  color: #EFEDEC;
+  color: white;
   font-size: 18px;
 }
 
@@ -122,6 +123,14 @@ section {
 }
 .navbar-home .navbar__menu {
   flex-basis: 60%;
+}
+@media screen and (min-width: 1920px) {
+  .navbar-home .navbar__logo {
+    flex-basis: 10%;
+  }
+  .navbar-home .navbar__menu {
+    flex-basis: 50%;
+  }
 }
 
 .navbar-border {
@@ -275,9 +284,6 @@ section {
   border-radius: 10px;
 }
 
-.services .title {
-  color: #BF6F71;
-}
 .services__card-container {
   display: flex;
   flex-direction: column;
@@ -314,4 +320,66 @@ section {
   font-size: 18px;
   color: #6B7689;
   padding-bottom: 30px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 70px 0;
+}
+.contact-form label {
+  display: block;
+  margin: 30px 0 10px 0;
+  font-size: 18px;
+  color: #7F8DA3;
+}
+.contact-form input,
+.contact-form select {
+  border: 0;
+  width: 500px;
+  height: 35px;
+  border-radius: 5px;
+  font-family: "Tenor Sans", sans-serif;
+  color: #6B7689;
+  padding: 10px;
+  font-size: 16px;
+}
+.contact-form input:focus,
+.contact-form select:focus {
+  outline: 1px solid #7F8DA3;
+}
+.contact-form input:active,
+.contact-form select:active {
+  background-color: white;
+}
+.contact-form option:hover {
+  background-color: #7F8DA3;
+}
+.contact-form option,
+.contact-form textarea {
+  font-family: "Tenor Sans", sans-serif;
+}
+.contact-form textarea {
+  color: #6B7689;
+  border: 0;
+  width: 500px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+.contact-form textarea:focus {
+  outline: 1px solid #7F8DA3;
+}
+.contact-form .button {
+  border: 0;
+  width: 150px;
+}
+.contact-form .button-container {
+  padding: 50px 0;
 }/*# sourceMappingURL=style.css.map */
