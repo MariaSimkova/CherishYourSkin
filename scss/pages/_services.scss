@@ -10,7 +10,6 @@
         flex-direction: column;
         align-items: center;
 
-
         padding-top: 50px;
 
         .card {
@@ -21,7 +20,7 @@
             width: 1000px;
             margin: 40px 0;
             background-color: white;
-            box-shadow: 4px 4px 10px variables.$color--secondary-shadow;
+            box-shadow: 4px 4px 10px variables.$color--shadow;
             
             &__image {
                 flex-basis: 35%;

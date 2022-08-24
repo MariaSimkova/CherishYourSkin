@@ -2,26 +2,17 @@
 @use '../abstracts/mixins';
 
 .navbar-home {
-    // background-color: 0%;
+
     position: absolute;
 
-    .navbar__logo {
-        flex-basis: 10%;
-    }
+    // .navbar__logo {
+    //     flex-basis: 10%;
+    // }
 
     .navbar__menu {
         flex-basis: 60%;
     }
 
-    @include mixins.large-desktop {
-        .navbar__logo {
-            flex-basis: 10%;
-        }
-    
-        .navbar__menu {
-            flex-basis: 50%;
-        }
-    }
 }
 
 .navbar-border {
@@ -34,6 +25,7 @@
     color: variables.$color__navbar;
 
     display: flex;
+    justify-content: space-between;
     align-items: center;
 
     &__logo {
@@ -46,11 +38,61 @@
         justify-content: space-between;
     }
 
-    a {
+    &__link {
         color: variables.$color__navbar;
 
         &:hover {
             color: variables.$color--primary;
         }
+
+        &--light {
+            color: variables.$color--primary-light;
+        }
     }
+}
+
+
+// MOBILE
+
+
+
+//TABLET
+
+.navbar-home {
+
+    @include mixins.tablet {
+
+    }
+}
+
+//LAPTOP
+.navbar-home {
+
+    @include mixins.laptop {
+
+    }
+}
+
+
+//DESKTOP
+
+
+@include mixins.desktop {
+
+    .navbar-home {
+
+        font-size: 19px;
+
+    }
+
+}
+
+
+//LARGE DESKTOP
+
+@include mixins.large-desktop {
+
+    // .navbar-home {
+
+    // }
 }

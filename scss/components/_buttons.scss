@@ -6,6 +6,7 @@
     display: block;
     border-radius: 10px;
     text-align: center;
+    color: variables.$color--light;
 
     &:hover {
         color: variables.$color--light;
@@ -14,24 +15,29 @@
     &--large {
         width: 250px;
         padding: 18px 20px;
-        background-color: variables.$color--primary-dark;
-        color: variables.$color--light;
         font-size: 22px;
     }
 
     &--small {
         width: 200px;
         padding: 13px 18px;
-        background-color: variables.$color--secondary;
-        color: variables.$color--light;
         font-size: 20px;
     }
 
     &--card {
         width: 150px;
         padding: 10px 15px;
-        background-color: variables.$color--primary;
         color: white;
         font-size: 18px;
+        background-color: variables.$color--primary-light;
     }
+
+    &--light {
+        background-color: variables.$color--primary-light;
+    }
+
+    &--dark {
+        background-color: variables.$color--primary-dark;
+    }
+
 }

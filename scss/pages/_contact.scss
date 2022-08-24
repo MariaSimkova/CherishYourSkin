@@ -25,7 +25,7 @@
             display: block;
             margin: 30px 0 10px 0;
             font-size: 18px;
-            color: variables.$color--secondary;
+            color: variables.$color__navbar;
         }
 
         input,
@@ -58,7 +58,7 @@
         }
 
         textarea {
-            color: variables.$color--secondary-dark;
+            color: variables.$color--secondary;
             border: 0;
             width: 500px;
             border-radius: 5px;

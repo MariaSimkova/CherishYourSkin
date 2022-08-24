@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background-color: #EFEDEC;
+  background-color: #F2EAE8;
 }
 
 body,
@@ -27,7 +27,7 @@ a:hover {
 }
 
 a:hover {
-  color: #BF6F71;
+  color: #CA6374;
 }
 
 ul, li {
@@ -43,7 +43,7 @@ h3 {
 
 .title {
   font-size: 48px;
-  color: #BF6F71;
+  color: #CA6374;
 }
 .title--center {
   text-align: center;
@@ -51,11 +51,11 @@ h3 {
 
 .subtitle {
   font-size: 34px;
-  color: #BF6F71;
+  color: #CA6374;
   padding-bottom: 20px;
 }
 .subtitle--light {
-  color: #EFEDEC;
+  color: #F2EAE8;
 }
 .subtitle--center {
   text-align: center;
@@ -69,7 +69,7 @@ h3 {
   color: #6B7689;
 }
 .text--light {
-  color: #EFEDEC;
+  color: #F2EAE8;
 }
 
 .text--first-paragraph,
@@ -89,48 +89,40 @@ section {
   display: block;
   border-radius: 10px;
   text-align: center;
+  color: #F2EAE8;
 }
 .button:hover {
-  color: #EFEDEC;
+  color: #F2EAE8;
 }
 .button--large {
   width: 250px;
   padding: 18px 20px;
-  background-color: #9D645F;
-  color: #EFEDEC;
   font-size: 22px;
 }
 .button--small {
   width: 200px;
   padding: 13px 18px;
-  background-color: #7F8DA3;
-  color: #EFEDEC;
   font-size: 20px;
 }
 .button--card {
   width: 150px;
   padding: 10px 15px;
-  background-color: #BF6F71;
   color: white;
   font-size: 18px;
+  background-color: #D69596;
+}
+.button--light {
+  background-color: #D69596;
+}
+.button--dark {
+  background-color: #9D645F;
 }
 
 .navbar-home {
   position: absolute;
 }
-.navbar-home .navbar__logo {
-  flex-basis: 10%;
-}
 .navbar-home .navbar__menu {
   flex-basis: 60%;
-}
-@media screen and (min-width: 1920px) {
-  .navbar-home .navbar__logo {
-    flex-basis: 10%;
-  }
-  .navbar-home .navbar__menu {
-    flex-basis: 50%;
-  }
 }
 
 .navbar-border {
@@ -142,6 +134,7 @@ section {
   width: 100%;
   color: #634B45;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 .navbar__logo {
@@ -152,13 +145,21 @@ section {
   display: flex;
   justify-content: space-between;
 }
-.navbar a {
+.navbar__link {
   color: #634B45;
 }
-.navbar a:hover {
-  color: #BF6F71;
+.navbar__link:hover {
+  color: #CA6374;
+}
+.navbar__link--light {
+  color: #D69596;
 }
 
+@media screen and (min-width: 1200px) {
+  .navbar-home {
+    font-size: 19px;
+  }
+}
 .cta {
   background-size: cover;
 }
@@ -202,12 +203,11 @@ section {
 }
 .home-hero__title {
   font-family: "Tenor Sans", sans-serif;
-  color: #BF6F71;
+  color: #CA6374;
 }
 .home-hero__slogan {
   font-family: "Marcellus", serif;
   font-size: 24px;
-  color: #727883;
 }
 
 .home-about {
@@ -229,7 +229,7 @@ section {
   display: flex;
 }
 .home-articles .link:hover {
-  color: #EFEDEC;
+  color: #F2EAE8;
 }
 .home-articles__story, .home-articles__acne {
   flex-basis: 50%;
@@ -249,13 +249,16 @@ section {
   flex-direction: column;
   align-items: center;
 }
+.home-services .subtitle {
+  color: #557D8E;
+}
 .home-services__card {
   display: flex;
   flex-direction: column;
   width: 300px;
   margin: 30px;
   background-color: white;
-  box-shadow: 4px 4px 10px rgba(127, 141, 163, 0.3137254902);
+  box-shadow: 4px 4px 10px #DBD9DA;
 }
 .home-services__card-container {
   display: flex;
@@ -267,6 +270,9 @@ section {
   text-align: center;
   color: #6B7689;
   font-size: 20px;
+}
+.home-services .button {
+  background-color: #90ABC3;
 }
 
 .about-content,
@@ -296,7 +302,7 @@ section {
   width: 1000px;
   margin: 40px 0;
   background-color: white;
-  box-shadow: 4px 4px 10px rgba(127, 141, 163, 0.3137254902);
+  box-shadow: 4px 4px 10px #DBD9DA;
 }
 .services__card-container .card__image {
   flex-basis: 35%;
@@ -308,12 +314,12 @@ section {
 }
 .services__card-container .card__info-title {
   font-size: 24px;
-  color: #BF6F71;
+  color: #CA6374;
   padding-bottom: 25px;
 }
 .services__card-container .card__info-price {
   font-size: 18px;
-  color: #7F8DA3;
+  color: #90ABC3;
   padding-bottom: 15px;
 }
 .services__card-container .card__info-description {
@@ -337,7 +343,7 @@ section {
   display: block;
   margin: 30px 0 10px 0;
   font-size: 18px;
-  color: #7F8DA3;
+  color: #634B45;
 }
 .contact-form input,
 .contact-form select {
@@ -352,21 +358,21 @@ section {
 }
 .contact-form input:focus,
 .contact-form select:focus {
-  outline: 1px solid #7F8DA3;
+  outline: 1px solid #90ABC3;
 }
 .contact-form input:active,
 .contact-form select:active {
   background-color: white;
 }
 .contact-form option:hover {
-  background-color: #7F8DA3;
+  background-color: #90ABC3;
 }
 .contact-form option,
 .contact-form textarea {
   font-family: "Tenor Sans", sans-serif;
 }
 .contact-form textarea {
-  color: #6B7689;
+  color: #90ABC3;
   border: 0;
   width: 500px;
   border-radius: 5px;
@@ -374,7 +380,7 @@ section {
   font-size: 16px;
 }
 .contact-form textarea:focus {
-  outline: 1px solid #7F8DA3;
+  outline: 1px solid #90ABC3;
 }
 .contact-form .button {
   border: 0;
