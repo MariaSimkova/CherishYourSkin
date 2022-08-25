@@ -49,7 +49,12 @@ h3 {
 }
 @media screen and (min-width: 360px) {
   .title {
-    font-size: 30px;
+    font-size: 27px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .title {
+    font-size: 36px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -70,7 +75,7 @@ h3 {
 }
 @media screen and (min-width: 360px) {
   .subtitle {
-    font-size: 28px;
+    font-size: 30px;
     padding-bottom: 10px;
   }
 }
@@ -431,7 +436,23 @@ section {
   display: flex;
   flex-direction: column;
   align-items: start;
-  padding: 70px 0;
+}
+@media screen and (min-width: 360px) {
+  .contact-form {
+    padding: 30px 0;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 720px) {
+  .contact-form {
+    padding: 50px 0;
+    align-items: start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-form {
+    padding: 70px 0;
+  }
 }
 .contact-form label {
   display: block;
@@ -439,11 +460,31 @@ section {
   font-size: 18px;
   color: #634B45;
 }
+@media screen and (min-width: 360px) {
+  .contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 70vw;
+  }
+}
+@media screen and (min-width: 720px) {
+  .contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 60vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 50vw;
+  }
+}
 .contact-form input,
 .contact-form select {
   border: 0;
-  width: 500px;
-  height: 35px;
+  height: 40px;
   border-radius: 5px;
   font-family: "Tenor Sans", sans-serif;
   color: #6B7689;
@@ -466,9 +507,8 @@ section {
   font-family: "Tenor Sans", sans-serif;
 }
 .contact-form textarea {
-  color: #90ABC3;
+  color: #6B7689;
   border: 0;
-  width: 500px;
   border-radius: 5px;
   padding: 10px;
   font-size: 16px;

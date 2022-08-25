@@ -14,7 +14,22 @@
         flex-direction: column;
         align-items: start;
 
-        padding: 70px 0;
+        //MOBILE
+        @include mixins.mobile {
+            padding: 30px 0;
+            align-items: center;
+        }
+
+        //TABLET
+        @include mixins.tablet {
+            padding: 50px 0;
+            align-items: start;
+        }
+
+        //LAPTOP
+        @include mixins.laptop {
+            padding: 70px 0;
+        }
 
 
         label {
@@ -25,10 +40,29 @@
         }
 
         input,
+        select,
+        textarea {
+            //MOBILE
+            @include mixins.mobile {
+                width: 70vw;
+            }
+
+            //TABLET
+            @include mixins.tablet {
+                width: 60vw;
+            }
+
+            //LAPTOP, DESKTOP
+            @include mixins.laptop {
+                width: 50vw;
+            }
+
+        }
+
+        input,
         select {
             border: 0;
-            width: 500px;
-            height: 35px;
+            height: 40px;
             border-radius: 5px;
             font-family: variables.$font__text;
             color: variables.$color--secondary-dark;
@@ -54,9 +88,8 @@
         }
 
         textarea {
-            color: variables.$color--secondary;
+            color: variables.$color--secondary-dark;
             border: 0;
-            width: 500px;
             border-radius: 5px;
             padding: 10px;
             font-size: 16px;
@@ -78,32 +111,6 @@
             border: 0;
             width: 150px;
 
-        }
-
-
-
-        // MOBILE
-        @include mixins.mobile {
-
-        }
-
-        // TABLET
-        @include mixins.tablet {
-
-        }
-
-        // LAPTOP
-        @include mixins.laptop {
-
-        }
-
-        // DESKTOP
-        // @include mixins.desktop {
-
-        // }
-
-        // LARGE DESKTOP
-        @include mixins.large-desktop {
 
         }
 
