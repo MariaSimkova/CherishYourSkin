@@ -25,11 +25,18 @@
     }
 
     &--card {
-        width: 150px;
         padding: 10px 15px;
         color: white;
         font-size: 18px;
         background-color: variables.$color--primary-light;
+
+        @include mixins.mobile {
+             width: 100%;
+        }
+
+        @include mixins.tablet {
+            width: 150px;
+        }
     }
 
     &--light {

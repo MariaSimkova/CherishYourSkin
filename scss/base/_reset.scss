@@ -40,16 +40,24 @@ h3 {
 }
 
 .title {
-  font-size: 48px;
   color: variables.$color--primary;
 
   &--center {
     text-align: center;
   }
+
+  // MOBILE
+  @include mixins.mobile {
+    font-size: 30px;
+  }
+
+  //LAPTOP
+  @include mixins.laptop {
+    font-size: 48px;
+  }
 }
 
 .subtitle {
-  font-size: 34px;
   color: variables.$color--primary;
   padding-bottom: 20px;
 
@@ -60,10 +68,23 @@ h3 {
   &--center {
     text-align: center;
   }
+
+
+  // MOBILE
+  @include mixins.mobile {
+    font-size: 28px;
+    padding-bottom: 10px;
+  }
+
+  //LAPTOP
+  @include mixins.laptop {
+    font-size: 34px;
+  }
+
+
 }
 
 .text {
-  font-size: 20px;
   padding: 0 0 30px 0;
   
   &--dark {
@@ -73,6 +94,19 @@ h3 {
   &--light {
     color: variables.$color--light;
   }
+
+
+  // MOBILE
+  @include mixins.mobile {
+    font-size: 16px;
+  }
+
+  // LAPTOP
+  @include mixins.laptop {
+    font-size: 20px;
+  }
+
+
 }
 
 .text--first-paragraph,
@@ -82,8 +116,19 @@ h3 {
 
 .navbar{
   padding: 0 120px;
+
+      // MOBILE
+      @include mixins.mobile {
+        padding: 0 25px;
+      }
 }
 
 section {
   padding: 80px 120px;
+
+    // MOBILE
+    @include mixins.mobile {
+      padding: 50px 25px;
+    }
+    
 }

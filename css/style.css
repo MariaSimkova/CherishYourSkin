@@ -42,15 +42,23 @@ h3 {
 }
 
 .title {
-  font-size: 48px;
   color: #CA6374;
 }
 .title--center {
   text-align: center;
 }
+@media screen and (min-width: 360px) {
+  .title {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 48px;
+  }
+}
 
 .subtitle {
-  font-size: 34px;
   color: #CA6374;
   padding-bottom: 20px;
 }
@@ -60,9 +68,19 @@ h3 {
 .subtitle--center {
   text-align: center;
 }
+@media screen and (min-width: 360px) {
+  .subtitle {
+    font-size: 28px;
+    padding-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subtitle {
+    font-size: 34px;
+  }
+}
 
 .text {
-  font-size: 20px;
   padding: 0 0 30px 0;
 }
 .text--dark {
@@ -70,6 +88,16 @@ h3 {
 }
 .text--light {
   color: #F2EAE8;
+}
+@media screen and (min-width: 360px) {
+  .text {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .text {
+    font-size: 20px;
+  }
 }
 
 .text--first-paragraph,
@@ -80,9 +108,19 @@ h3 {
 .navbar {
   padding: 0 120px;
 }
+@media screen and (min-width: 360px) {
+  .navbar {
+    padding: 0 25px;
+  }
+}
 
 section {
   padding: 80px 120px;
+}
+@media screen and (min-width: 360px) {
+  section {
+    padding: 50px 25px;
+  }
 }
 
 .button {
@@ -105,11 +143,20 @@ section {
   font-size: 20px;
 }
 .button--card {
-  width: 150px;
   padding: 10px 15px;
   color: white;
   font-size: 18px;
   background-color: #D69596;
+}
+@media screen and (min-width: 360px) {
+  .button--card {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 720px) {
+  .button--card {
+    width: 150px;
+  }
 }
 .button--light {
   background-color: #D69596;
@@ -155,11 +202,6 @@ section {
   color: #D69596;
 }
 
-@media screen and (min-width: 1200px) {
-  .navbar-home {
-    font-size: 19px;
-  }
-}
 .cta {
   background-size: cover;
 }
@@ -289,43 +331,95 @@ section {
   width: 80%;
   border-radius: 10px;
 }
-
 .services__card-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 50px;
+}
+@media screen and (min-width: 360px) {
+  .services__card-container {
+    padding-top: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services__card-container {
+    padding-top: 50px;
+  }
 }
 .services__card-container .card {
   display: flex;
   align-items: center;
-  width: 1000px;
   margin: 40px 0;
   background-color: white;
   box-shadow: 4px 4px 10px #DBD9DA;
-}
-.services__card-container .card__image {
-  flex-basis: 35%;
-  max-width: 35%;
-}
-.services__card-container .card__info {
-  flex-basis: 65%;
-  padding: 25px 60px;
+  border-radius: 9px;
 }
 .services__card-container .card__info-title {
-  font-size: 24px;
   color: #CA6374;
-  padding-bottom: 25px;
 }
 .services__card-container .card__info-price {
-  font-size: 18px;
   color: #90ABC3;
   padding-bottom: 15px;
 }
 .services__card-container .card__info-description {
-  font-size: 18px;
   color: #6B7689;
   padding-bottom: 30px;
+}
+@media screen and (min-width: 360px) {
+  .services__card-container .card {
+    flex-direction: column;
+    width: 80vw;
+  }
+  .services__card-container .card .card__image {
+    width: 100%;
+    border-radius: 9px 9px 0 0;
+  }
+  .services__card-container .card .card__info {
+    padding: 20px;
+  }
+  .services__card-container .card .card__info-price {
+    font-size: 17px;
+    padding-top: 10px;
+  }
+  .services__card-container .card .card__info-title {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .services__card-container .card {
+    flex-direction: row;
+    width: 660px;
+  }
+  .services__card-container .card .card__image {
+    border-radius: 9px 0 0 9px;
+    flex-basis: 33%;
+    width: 250px;
+  }
+  .services__card-container .card .card__info {
+    padding: 20px 30px;
+    flex-basis: 69%;
+  }
+  .services__card-container .card .card__info-title {
+    padding-bottom: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services__card-container .card {
+    width: 1000px;
+  }
+  .services__card-container .card .card__image {
+    flex-basis: 35%;
+    max-width: 35%;
+  }
+  .services__card-container .card .card__info {
+    padding: 25px 60px;
+    flex-basis: 65%;
+    font-size: 18px;
+  }
+  .services__card-container .card .card__info-title {
+    font-size: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .contact {

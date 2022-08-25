@@ -1,0 +1,27 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+// MOBILE
+@include mixins.mobile {
+
+}
+
+// TABLET
+@include mixins.tablet {
+
+}
+
+// LAPTOP
+@include mixins.laptop {
+
+}
+
+// DESKTOP
+// @include mixins.desktop {
+
+// }
+
+// LARGE DESKTOP
+@include mixins.large-desktop {
+
+}
