@@ -30,11 +30,11 @@
         font-size: 18px;
         background-color: variables.$color--primary-light;
 
-        @include mixins.mobile {
+        @include mixins.x-small {
              width: 100%;
         }
 
-        @include mixins.tablet {
+        @include mixins.medium {
             width: 150px;
         }
     }

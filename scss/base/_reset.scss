@@ -47,17 +47,19 @@ h3 {
   }
 
   // MOBILE
-  @include mixins.mobile {
-    font-size: 27px;
+  font-size: 27px;
+
+  @include mixins.small {
+    font-size: 33px;
   }
 
   //TABLET
-  @include mixins.tablet {
+  @include mixins.medium {
     font-size: 36px;
   }
 
   //LAPTOP
-  @include mixins.laptop {
+  @include mixins.large {
     font-size: 48px;
   }
 }
@@ -76,14 +78,17 @@ h3 {
 
 
   // MOBILE
-  @include mixins.mobile {
-    font-size: 30px;
+  font-size: 30px;
+  padding-bottom: 10px;
+
+  @include mixins.small {
+    font-size: 34px;
     padding-bottom: 10px;
   }
 
   //LAPTOP
-  @include mixins.laptop {
-    font-size: 34px;
+  @include mixins.x-large {
+    font-size: 36px;
   }
 
 
@@ -102,12 +107,14 @@ h3 {
 
 
   // MOBILE
-  @include mixins.mobile {
     font-size: 16px;
-  }
+
+    @include mixins.small {
+      font-size: 19px;
+    }
 
   // LAPTOP
-  @include mixins.laptop {
+  @include mixins.large {
     font-size: 20px;
   }
 
@@ -123,17 +130,22 @@ h3 {
   padding: 0 120px;
 
       // MOBILE
-      @include mixins.mobile {
+      @include mixins.x-small {
         padding: 0 25px;
       }
 }
 
 section {
-  padding: 80px 120px;
+  // MOBILE
+    padding: 50px 35px;
 
-    // MOBILE
-    @include mixins.mobile {
-      padding: 50px 25px;
-    }
+  //TABLET
+  @include mixins.medium {
+    padding: 50px 50px;
+  }
+
+  @include mixins.large {
+    padding: 80px 120px;
+  }
     
 }

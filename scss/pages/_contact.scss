@@ -15,19 +15,19 @@
         align-items: start;
 
         //MOBILE
-        @include mixins.mobile {
+        @include mixins.x-small {
             padding: 30px 0;
             align-items: center;
         }
 
         //TABLET
-        @include mixins.tablet {
+        @include mixins.medium {
             padding: 50px 0;
             align-items: start;
         }
 
         //LAPTOP
-        @include mixins.laptop {
+        @include mixins.x-large {
             padding: 70px 0;
         }
 
@@ -43,17 +43,17 @@
         select,
         textarea {
             //MOBILE
-            @include mixins.mobile {
+            @include mixins.x-small {
                 width: 70vw;
             }
 
             //TABLET
-            @include mixins.tablet {
+            @include mixins.medium {
                 width: 60vw;
             }
 
             //LAPTOP, DESKTOP
-            @include mixins.laptop {
+            @include mixins.x-large {
                 width: 50vw;
             }
 

@@ -4,44 +4,81 @@
 .about,
 .story {
 
+    display: grid;
+
     &-content {
-        display: flex;
+        
+        max-width: 1200px;
+        display: grid;
+        justify-self: center;
 
-        //Use grid instead of flexbox to rearrange the content for responsive design
+        &__title {
+            grid-area: title;
+        }
 
-        &__image-container,
+        &__image-container {
+            grid-area: image;
+            display: flex;
+            @include mixins.center;
+        }
+
         &__text-container {
-            flex-basis: 50%;
+            grid-area: text;
         }
 
         &__image {
-            width: 80%;
             border-radius: 10px;
+            justify-self: center;
         }
 
 
         // MOBILE
-        @include mixins.mobile {
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        "title title"
+        "image image"
+        "text text";
 
+        &__image {
+            max-width: 90%;
+        }
+
+        &__title {
+            text-align: center;
+            padding-bottom: 40px;
+        }
+
+        @include mixins.small {
+
+            &__image {
+                max-width: 85%;
+            }
+
+            &__title {
+                padding-bottom: 60px;
+            }
         }
 
         // TABLET
-        @include mixins.tablet {
+        @include mixins.medium {
+            padding-left: 50px;
+            padding-right: 50px;
 
-        }
+            grid-template-areas: 
+            "title title"
+            "image text";
 
-        // LAPTOP
-        @include mixins.laptop {
+            &__image {
+                max-width: 80%;
+            }
 
-        }
+            &__title {
+                padding-bottom: 85px;
+            }
 
-        // DESKTOP
-        // @include mixins.desktop {
-
-        // }
-
-        // LARGE DESKTOP
-        @include mixins.large-desktop {
+            .text--first-paragraph {
+                padding-top: 0;
+            }
 
         }
 

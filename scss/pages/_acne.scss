@@ -2,26 +2,23 @@
 @use '../abstracts/mixins';
 
 // MOBILE
-@include mixins.mobile {
+@include mixins.x-small {
 
 }
 
 // TABLET
-@include mixins.tablet {
+@include mixins.medium {
 
 }
 
 // LAPTOP
-@include mixins.laptop {
+@include mixins.x-large {
 
 }
 
-// DESKTOP
-// @include mixins.desktop {
 
-// }
 
 // LARGE DESKTOP
-@include mixins.large-desktop {
+@include mixins.xx-large {
 
 }
