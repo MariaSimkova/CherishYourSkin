@@ -10,6 +10,7 @@
         flex-direction: column;
         align-items: center;
 
+
         // MOBILE
         padding-top: 10px;
         
@@ -44,7 +45,6 @@
                     padding-bottom: 30px;
                 }
 
-
             }
 
             // MOBILE
@@ -73,11 +73,11 @@
             // TABLET
             @include mixins.medium {
                 flex-direction: row;
-                width: 660px;
+                width: 730px;
                 
                 .card__image {
                     border-radius: 9px 0 0 9px;
-                    flex-basis: 33%;
+                    flex-basis: 55%;
                     width: 250px;
                     //fix the width to balance with the text
                 }
