@@ -39,8 +39,12 @@
         "image image"
         "text text";
 
+        // &__image-container {
+        //     width: 100vw;
+        // }
+
         &__image {
-            max-width: 90%;
+            width: 100%;
         }
 
         &__title {

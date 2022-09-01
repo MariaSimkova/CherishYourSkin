@@ -1,24 +1,90 @@
 @use '../abstracts/variables';
 @use '../abstracts/mixins';
 
-// MOBILE
-@include mixins.x-small {
+.acne {
 
-}
+    display: grid;
 
-// TABLET
-@include mixins.medium {
+    &-content {
+        
+        max-width: 1200px;
+        display: grid;
+        justify-self: center;
 
-}
+        &__title {
+            grid-area: title;
+        }
 
-// LAPTOP
-@include mixins.x-large {
+        &__image-container {
+            grid-area: image;
+            display: flex;
+            @include mixins.center;
+        }
 
-}
+        &__text-container {
+            grid-area: text;
+        }
+
+        &__image {
+            border-radius: 10px;
+            justify-self: center;
+        }
 
 
+        // MOBILE
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        "title title"
+        "image image"
+        "text text";
 
-// LARGE DESKTOP
-@include mixins.xx-large {
+        // &__image-container {
+        //     width: 100vw;
+        // }
 
+        &__image {
+            width: 100%;
+        }
+
+        &__title {
+            text-align: center;
+            padding-bottom: 40px;
+        }
+
+        @include mixins.small {
+
+            &__image {
+                max-width: 85%;
+            }
+
+            &__title {
+                padding-bottom: 60px;
+            }
+        }
+
+        // TABLET
+        @include mixins.medium {
+            padding-left: 50px;
+            padding-right: 50px;
+
+            grid-template-areas: 
+            "title title"
+            "image text";
+
+            &__image {
+                max-width: 80%;
+            }
+
+            &__title {
+                padding-bottom: 85px;
+            }
+
+            .text--first-paragraph {
+                padding-top: 0;
+            }
+
+        }
+
+
+    }
 }
