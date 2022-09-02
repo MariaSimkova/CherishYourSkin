@@ -40,7 +40,36 @@
 .acne {
 
     .cta {
-        background-image: url(/images/background__acne.jpg);
+        background-image: url(/images/background__acne.png);
+        background-position: top left;
+
+        .subtitle {
+            text-align: center;
+        }
+
+        .button-container {
+            @include mixins.center;
+        }
+
+        @include mixins.small {
+
+            .subtitle {
+                width: 55%;
+                text-align: start;
+            }
+
+            .button-container {
+                align-items: start;
+            }
+
+        }
+
+        @include mixins.medium {
+            
+            .subtitle {
+                width: 40%;
+            }
+        }
     }
     
 }

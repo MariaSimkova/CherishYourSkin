@@ -48,7 +48,7 @@ h3 {
 .title--center {
   text-align: center;
 }
-@media screen and (min-width: 564px) {
+@media screen and (min-width: 528px) {
   .title {
     font-size: 33px;
   }
@@ -76,7 +76,7 @@ h3 {
 .subtitle--center {
   text-align: center;
 }
-@media screen and (min-width: 564px) {
+@media screen and (min-width: 528px) {
   .subtitle {
     font-size: 34px;
     padding-bottom: 10px;
@@ -98,7 +98,7 @@ h3 {
 .text--light {
   color: #F2EAE8;
 }
-@media screen and (min-width: 564px) {
+@media screen and (min-width: 528px) {
   .text {
     font-size: 19px;
   }
@@ -241,7 +241,30 @@ section {
 }
 
 .acne .cta {
-  background-image: url(/images/background__acne.jpg);
+  background-image: url(/images/background__acne.png);
+  background-position: top left;
+}
+.acne .cta .subtitle {
+  text-align: center;
+}
+.acne .cta .button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 528px) {
+  .acne .cta .subtitle {
+    width: 55%;
+    text-align: start;
+  }
+  .acne .cta .button-container {
+    align-items: start;
+  }
+}
+@media screen and (min-width: 768px) {
+  .acne .cta .subtitle {
+    width: 40%;
+  }
 }
 
 .home-hero {
@@ -271,6 +294,7 @@ section {
 
 .home-about {
   display: flex;
+  justify-content: center;
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -280,6 +304,14 @@ section {
 .home-about__image {
   width: 80%;
   border-radius: 10px;
+}
+.home-about .hide {
+  display: none;
+}
+@media screen and (min-width: 1600px) {
+  .home-about .hide {
+    display: block;
+  }
 }
 
 .home-articles {
@@ -376,7 +408,7 @@ section {
   text-align: center;
   padding-bottom: 40px;
 }
-@media screen and (min-width: 564px) {
+@media screen and (min-width: 528px) {
   .about-content__image,
 .story-content__image {
     max-width: 85%;
@@ -441,7 +473,7 @@ section {
   text-align: center;
   padding-bottom: 40px;
 }
-@media screen and (min-width: 564px) {
+@media screen and (min-width: 528px) {
   .acne-content__image {
     max-width: 85%;
   }
