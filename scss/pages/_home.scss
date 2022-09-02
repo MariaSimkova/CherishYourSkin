@@ -6,35 +6,166 @@
 
 .home-hero {
 
-    padding: 120px 100px;
-    // height: 700px;
-    height: 100vh;
-
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
 
-    background-image: url(/images/home__hero\(couple\).png);
-	background-size: cover;
+    background-repeat: no-repeat;
 	background-attachment: fixed;
-    background-position: top center;
 
-    &__title,
-    &__slogan,
-    .button-container {
-        padding: 30px;
-        width: 35%;
-    }
 
     &__title {
         font-family: variables.$font__text;
         color: variables.$color--primary;
+        line-height: 1.3;
     }
 
     &__slogan {
         font-family: variables.$font__title;
-        font-size: 24px;
     }
+
+
+    // EXTRA SMALL MOBILE (Galaxy fold)
+    height: 450px;
+    padding: 70px 25px;
+
+    background-image: url(/images/home__hero--mobile\ \(couple\).jpg);
+    background-size: 100vw;
+
+    &__title,
+    &__slogan {
+        padding-bottom: 35px;
+        width: 50%;
+    }
+
+    &__slogan {
+        font-size: 18px;
+
+        .hide {
+            display: none;
+        }
+    }
+
+
+    // MOBILE
+    @include mixins.x-small {
+        height: 600px;
+        padding: 60px 40px;
+        // background-width: 100%;
+
+        &__title,
+        &__slogan,
+        .button-container {
+            padding: 35px 0;
+            width: 60%;
+        }
+    
+        &__slogan {
+            font-size: 22px;
+
+            .hide {
+                display: inline;
+            }
+        }
+    }
+
+
+    @include mixins.small {
+        height: 700px;
+        padding: 70px 70px;
+
+        &__title,
+        &__slogan,
+        .button-container {
+            padding-top: 70px;
+        }
+
+        &__slogan {
+            font-size: 25px;
+        }
+    }
+
+
+    //TABLET
+    @include mixins.medium {
+        height: 500px;
+        padding: 70px 50px;
+
+        background-image: url(/images/home__hero\(couple\).png);
+        background-position: top left;
+        background-size: 100%;
+
+        &__title,
+        &__slogan,
+        .button-container {
+            padding-top: 30px;
+            width: 35%;
+        }
+
+        &__title {
+            font-size: 36px;
+        }
+
+        .button-container {
+            padding-bottom: 0;
+        }
+
+    }
+
+    // LAPTOP 
+    @include mixins.large {
+        height: 600px;
+
+        &__title,
+        &__slogan,
+        .button-container {
+            width: 33%;
+        }
+
+        &__title {
+            font-size: 44px;
+        }
+
+        &__slogan {
+            font-size: 28px;
+        }
+    }
+
+
+    // DESKTOP
+    @include mixins.x-large {
+        height: 800px;
+        padding: 120px 80px;
+
+        &__title,
+        &__slogan,
+        .button-container {
+            width: 35%;
+        }
+
+        &__title {
+            font-size: 52px;
+        }
+
+        &__slogan {
+            font-size: 34px;
+        }
+    }
+
+    // @include mixins.xx-large {
+    //     height: 1000px;
+    //     padding: 170px 80px;
+
+    //     &__title {
+    //         font-size: 70px;
+    //     }
+
+    //     &__slogan {
+    //         font-size: 46px;
+    //     }
+
+    // }
+
 
 }
 

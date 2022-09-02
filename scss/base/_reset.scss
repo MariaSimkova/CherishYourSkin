@@ -12,6 +12,10 @@ body {
   background-color: variables.$color--light;
 }
 
+main {
+  margin: 0;
+}
+
 body,
 button,
 a {
@@ -47,15 +51,15 @@ h3 {
   }
 
   // MOBILE
-  font-size: 27px;
+  font-size: 33px;
 
   @include mixins.small {
-    font-size: 33px;
+    font-size: 36px;
   }
 
   //TABLET
   @include mixins.medium {
-    font-size: 36px;
+    font-size: 40px;
   }
 
   //LAPTOP
@@ -127,12 +131,18 @@ h3 {
 }
 
 .navbar{
-  padding: 0 120px;
 
-      // MOBILE
-      @include mixins.x-small {
-        padding: 0 25px;
-      }
+  //MOBILE
+  padding: 0 25px;
+
+    @include mixins.small {
+      padding: 0 80px;
+    }
+
+    // DESKTOP
+    @include mixins.x-large {
+      padding: 0 120px;
+    }
 }
 
 section {
