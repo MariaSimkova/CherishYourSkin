@@ -10,6 +10,12 @@
 
     &:hover {
         color: variables.$color--light;
+        box-shadow: 1px 1px 10px #B9ACAC;
+    }
+
+    &:active {
+        transform: scale(0.99);
+        box-shadow: 1px 1px 8px #B9ACAC;
     }
     
     &--large {
@@ -30,8 +36,19 @@
         font-size: 18px;
         background-color: variables.$color--primary-light;
 
+        &:hover {
+            color: variables.$color--light;
+            transform: scale(1.02);
+            box-shadow: 3px 3px 10px variables.$color--shadow;
+        }
+    
+        &:active {
+            transform: scale(0.99);
+            box-shadow: 3px 3px 6px variables.$color--shadow;
+        }
+
         @include mixins.x-small {
-             width: 100%;
+            width: 100%;
         }
 
         @include mixins.medium {
@@ -47,7 +64,25 @@
         background-color: variables.$color--primary-dark;
     }
 
+    &--cta:hover {
+        transform: scale(1.05);
+    }
+
+    &--cta:hover,
+    &--cta:active {
+        box-shadow: none;
+    }
+
     &--hero {
+
+        &:hover {
+            box-shadow: 1px 1px 15px 3px #B9ACAC;
+        }
+    
+        &:active {
+            box-shadow: 1px 1px 10px 2px #B9ACAC;
+        }
+
         @include mixins.x-large {
             width: 350px;
             font-size: 30px;

@@ -152,58 +152,127 @@
         }
     }
 
-    // @include mixins.xx-large {
-    //     height: 1000px;
-    //     padding: 170px 80px;
-
-    //     &__title {
-    //         font-size: 70px;
-    //     }
-
-    //     &__slogan {
-    //         font-size: 46px;
-    //     }
-
-    // }
-
-
 }
 
 
 // ABOUT
 .home-about {
 
-    display: flex;
-    justify-content: center;
+    display: grid;
+    justify-items: center;
     
     padding-top: 80px;
     padding-bottom: 80px;
-    // background-color: variables.$color--light;
 
-    &__image-container,
+    &__subtitle {
+        grid-area: subtitle;
+        align-self: center;
+    }
+
+    &__image-container {
+        grid-area: image;
+        display: flex;
+        @include mixins.center;
+        padding: 30px 0;
+    }
+
     &__text-container {
-        flex-basis: 50%;
+        grid-area: text;
+    }
+
+    &__link-container {
+        grid-area: link;
     }
 
     &__image {
-        width: 80%;
-        border-radius: 10px;
+        width: 85%;
+        border-radius: 50%;
+        max-width: 350px;
     }
+
+    // MOBILE
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "subtitle subtitle"
+    "image image"
+    "text text";
+
+    padding-top: 50px;
+    padding-bottom: 50px;
 
     .hide {
         display: none;
     }
 
-    // DESKTOP
+    .link {
+        // display: inline;
+        padding: 0;
+    }
 
-    @include mixins.xx-large {
+    &__link-container {
+        @include mixins.center;
+    }
 
-        .hide {
+
+    // TABLET
+    @include mixins.medium {
+
+        grid-template-areas: 
+        "image subtitle"
+        "image text";
+
+        gap: 15px;
+
+        &__subtitle,
+        &__text-container {
+            justify-self: start;
+        }
+
+        &__image {
+            width: 85%;
+            border-radius: 10px;
+            max-width: 400px;
+        }
+
+        &__link-container {
             display: block;
         }
 
     }
 
+    // DESKTOP
+
+    @include mixins.x-large {
+        grid-template-columns: 35% 65%;
+
+        &__image-container {
+            justify-self: end;
+        }
+
+    }
+
+    @include mixins.xx-large {
+
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+        gap: 30px;
+
+        .hide {
+            display: block;
+        }
+
+        &__image {
+            width: 80%;
+            border-radius: 10px;
+            max-width: 700px;
+        }
+
+        &__text-container {
+            max-width: 1500px;
+        }
+
+    }
 
 }
 
@@ -212,22 +281,18 @@
 // SKIN STORY
 .home-articles {
     padding: 0;
-    // background-image: url(/images/background__powder.png);
-    // background-size: cover;
-
     text-align: center;
-
-    .link:hover {
-        color: variables.$color--light;
-    }
-
     display: flex;
+
+    .text {
+        max-width: 1500px;
+    }
 
     &__story,
     &__acne {
         flex-basis: 50%;
         padding: 100px 50px;
-        // padding-right: 50px;
+        @include mixins.center;
     }
 
     &__story {
@@ -240,13 +305,23 @@
         background-size: cover;
     }
 
+    .link:hover {
+        color: variables.$color--light;
+    }
+
+    // MOBILE
+    flex-direction: column;
+
+    // TABLET AND LARGER
+    @include mixins.medium {
+        flex-direction: row;
+    }
+
 }
 
 
 // SERVICES
 .home-services {
-
-    // background-color: variables.$color--light;
 
     display: flex;
     flex-direction: column;
@@ -254,6 +329,7 @@
 
     .subtitle {
         color: variables.$color--secondary-title;
+        padding-top: 20px;
     }
 
 
@@ -261,7 +337,6 @@
 
         &-container {
             display: flex;
-            flex-direction: row;
             margin: 50px;
         }
 
@@ -272,18 +347,61 @@
         margin: 30px;
         background-color: white;
         box-shadow: 4px 4px 10px variables.$color--shadow;
+        border-radius: 10px;
+
+        &:hover {
+            transform: scale(1.015);
+            box-shadow: 5px 5px 20px 3px variables.$color--shadow;
+        }
+
+        &:active {
+            transform: none;
+        }
 
         &-title {
             padding: 50px;
             text-align: center;
             color: variables.$color--secondary-dark;
             font-size: 20px;
-
         }
+
+        &-image {
+            border-radius: 10px 10px 0 0;
+        }
+
+
+
+        // MOBILE
+        &-container {
+            flex-direction: column;
+        }
+
+        // TABLET
+        @include mixins.medium {
+            &-container {
+                flex-direction: row;
+            }
+
+            width: 220px;
+            margin: 20px;
+        }
+
+        // LAPTOP
+        @include mixins.large {
+            width: 300px;
+            margin: 30px;
+        }
+
+        // LARGE DESKTOP
+        @include mixins.xx-large {
+            width: 400px;
+            margin: 40px;
+        }
+
+
     }
 
     .button {
         background-color: variables.$color--secondary;
     }
-
 }
