@@ -113,16 +113,33 @@ h3 {
     text-align: center;
   }
 
-
   // MOBILE
-    font-size: 16px;
+  font-size: 16px;
 
-    @include mixins.small {
-      font-size: 19px;
-    }
+  @include mixins.small {
+    font-size: 19px;
+  }
 
   // LAPTOP
   @include mixins.large {
+    font-size: 20px;
+  }
+}
+
+.navbar__link {
+
+  // TABLET
+  @include mixins.medium {
+    font-size: 16px;
+  }
+
+  // LAPTOP
+  @include mixins.large {
+    font-size: 18px;
+  }
+
+  // LARGE DESKTOP
+  @include mixins.xx-large {
     font-size: 20px;
   }
 

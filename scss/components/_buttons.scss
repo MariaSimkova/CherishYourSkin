@@ -65,22 +65,25 @@
     }
 
     &--cta:hover {
+        box-shadow: none;
         transform: scale(1.05);
     }
 
-    &--cta:hover,
     &--cta:active {
         box-shadow: none;
+        transform: none;
     }
 
     &--hero {
 
         &:hover {
             box-shadow: 1px 1px 15px 3px #B9ACAC;
+            transform: scale(1.03);
         }
     
         &:active {
             box-shadow: 1px 1px 10px 2px #B9ACAC;
+            transform: none;
         }
 
         @include mixins.x-large {

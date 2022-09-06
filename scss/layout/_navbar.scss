@@ -1,24 +1,6 @@
 @use '../abstracts/variables';
 @use '../abstracts/mixins';
 
-.navbar-home {
-
-    position: absolute;
-
-    // .navbar__logo {
-    //     flex-basis: 10%;
-    // }
-
-    .navbar__menu {
-        flex-basis: 60%;
-    }
-
-}
-
-.navbar-border {
-    border-bottom: solid 1px variables.$color__navbar;
-}
-
 .navbar {
     height: 48px;
     width: 100%;
@@ -28,17 +10,14 @@
     justify-content: space-between;
     align-items: center;
 
-    &__logo {
-        flex-basis: 50%;
-    }
 
-    &__menu {
-        flex-basis: 50%;
-        display: flex;
-        justify-content: space-between;
-    }
 
+    // &__logo,
     &__link {
+        padding: 10px 25px 10px 0;
+    }
+
+    a {
         color: variables.$color__navbar;
 
         &:hover {
@@ -49,6 +28,219 @@
             color: variables.$color--primary-light;
         }
     }
+
+    a.navbar__logo {
+        color: variables.$color--primary;
+    }
+
+    &-border {
+        border-bottom: solid 1px variables.$color__navbar;
+    }
+
+
+
+    // MOBILE
+
+    &__link:not(:first-child) {
+        display: none;
+    }
+
+    a.icon {
+        display: block;
+        float: right;
+    }
+
+
+    // RESPONSIVE ON CLICK
+
+    &.responsive {
+        position: relative;
+    }
+
+   &.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    &.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    
+
+
+    // TABLET
+    @include mixins.medium {
+
+        a.navbar__link {
+            display: block;
+        }
+
+        a.icon {
+            display: none;
+        }
+
+    }
+
 }
+
+
+
+.navbar-home {
+    position: absolute;
+
+    //MOBILE
+    justify-content: end;
+
+    .navbar__link {
+        display: none;
+    }
+
+    // TABLET
+    @include mixins.medium {
+        justify-content: space-between;
+        width: 85%;
+
+        .navbar__link {
+            display: block;
+        }
+    }
+
+    // LAPTOP
+    @include mixins.large {
+        width: 75%;
+    }
+
+    // LARGE DESKTOP
+    @include mixins.xx-large {
+        width: 65%;
+    }
+
+}
+
+
+
+
+
+
+// .navbar {
+//     height: 48px;
+//     width: 100%;
+//     color: variables.$color__navbar;
+
+//     // display: flex;
+//     // justify-content: space-between;
+//     // align-items: center;
+
+
+
+//     // &__logo,
+//     &__link {
+//         padding: 10px 25px 10px 0;
+//     }
+
+//     a {
+//         display: block;
+
+//         color: variables.$color__navbar;
+
+//         &:hover {
+//             color: variables.$color--primary;
+//         }
+
+//         &--light {
+//             color: variables.$color--primary-light;
+//         }
+//     }
+
+//     &__logo a {
+//         color: variables.$color--primary;
+//     }
+
+//     &-border {
+//         border-bottom: solid 1px variables.$color__navbar;
+//     }
+
+
+
+//     // MOBILE
+
+//     &__link:not(:first-child) {
+//         display: none;
+//     }
+
+//     a.icon {
+//         display: block;
+//         float: right;
+//     }
+
+//     &.responsive {
+//         position: relative;
+//     }
+
+//    &.responsive a.icon {
+//         position: absolute;
+//         right: 0;
+//         top: 0;
+//     }
+
+//     &.responsive a {
+//         float: none;
+//         display: block;
+//         text-align: left;
+//     }
+
+
+//     // TABLET
+//     @include mixins.medium {
+
+//         a.navbar__link {
+//             display: block;
+//         }
+
+//         a.icon {
+//             display: none;
+//         }
+
+//     }
+
+// }
+
+
+
+// .navbar-home {
+
+//     position: absolute;
+
+//     //MOBILE
+//     justify-content: end;
+
+//     .navbar__link {
+//         display: none;
+//     }
+
+//     // TABLET
+//     @include mixins.medium {
+//         justify-content: space-between;
+//         width: 85%;
+
+//         .navbar__link {
+//             display: block;
+//         }
+//     }
+
+//     // LAPTOP
+//     @include mixins.large {
+//         width: 75%;
+//     }
+
+//     // LARGE DESKTOP
+//     @include mixins.xx-large {
+//         width: 65%;
+//     }
+
+// }
 
 
