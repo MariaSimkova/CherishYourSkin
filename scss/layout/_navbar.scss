@@ -68,7 +68,7 @@
         display: block;
         text-align: left;
     }
-    
+
 
 
     // TABLET
@@ -82,6 +82,21 @@
             display: none;
         }
 
+    }
+
+    // LAPTOP
+    @include mixins.large {
+        padding: 0 100px;
+    }
+
+    // DESKTOP
+    @include mixins.x-large {
+        padding: 0 200px;
+    }
+
+    // LARGE DESKTOP
+    @include mixins.xx-large {
+        padding: 0 300px;
     }
 
 }
