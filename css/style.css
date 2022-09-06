@@ -269,6 +269,9 @@ section {
 .navbar-border {
   border-bottom: solid 1px #634B45;
 }
+.navbar .icon {
+  font-size: 20px;
+}
 .navbar__link:not(:first-child) {
   display: none;
 }
