@@ -178,5 +178,9 @@ section {
   @include mixins.large {
     padding: 80px 120px;
   }
+
+  &.extra-padding {
+    padding-top: 100px;
+  }
     
 }

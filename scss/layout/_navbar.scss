@@ -2,19 +2,29 @@
 @use '../abstracts/mixins';
 
 .navbar {
+    
+    position: absolute;
     height: 48px;
     width: 100%;
     color: variables.$color__navbar;
 
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    // align-items: baseline;
+
+    .link-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        width: 100%;
+    }
 
 
 
     // &__logo,
-    &__link {
-        padding: 10px 25px 10px 0;
+    &__link,
+    .icon {
+        padding: 15px 25px 10px 0;
     }
 
     a {
@@ -44,42 +54,29 @@
 
 
     // MOBILE
-
-    &__link:not(:first-child) {
+    .link-box {
         display: none;
+    }
+
+    &__logo {
+        display: block;
     }
 
     a.icon {
         display: block;
-        float: right;
-    }
-
-
-    // RESPONSIVE ON CLICK
-
-    &.responsive {
-        position: relative;
-    }
-
-   &.responsive a.icon {
+        // float: right;
         position: absolute;
-        right: 0;
-        top: 0;
+        right: 5%;
     }
-
-    &.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-
-
 
     // TABLET
     @include mixins.medium {
 
-        a.navbar__link {
-            display: block;
+        // a.navbar__link {
+        //     display: block;
+        // }
+        .link-box {
+            display: flex;
         }
 
         a.icon {
@@ -103,163 +100,83 @@
         padding: 0 300px;
     }
 
+
+    &.navbar-home {
+    
+        //MOBILE
+        justify-content: end;
+    
+        .navbar__link {
+            display: none;
+        }
+    
+        // TABLET
+        @include mixins.medium {
+            justify-content: space-between;
+            padding-left: 80px;
+            width: 85%;
+    
+            .navbar__link {
+                display: block;
+            }
+            
+        }   
+    
+        // LAPTOP
+        @include mixins.large {
+            width: 75%;
+        }
+    
+        // LARGE DESKTOP
+        @include mixins.xx-large {
+            width: 65%;
+        }
+        
+    }
+    
+
 }
 
+// RESPONSIVE ON CLICK
 
-
-.navbar-home {
+.navbar.responsive,
+.navbar-home.responsive {
     position: absolute;
+    justify-content: space-between;
+    // align-items: baseline;
+    height: 300px;
+    background-color: variables.$color--light;
+    // border: none;
 
-    //MOBILE
-    justify-content: end;
-
-    .navbar__link {
-        display: none;
+    .navbar__wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
-    // TABLET
-    @include mixins.medium {
-        justify-content: space-between;
-        width: 85%;
+    .navbar__logo {
+        display: block;
+        align-self: start;
+    }
 
+    .link-box {
+        display: block;
+        align-items: end;
+
+        
         .navbar__link {
+            float: none;
             display: block;
+            text-align: center;
+        }
+
+        .padding-top {
+            padding-top: 30px;
         }
     }
 
-    // LAPTOP
-    @include mixins.large {
-        width: 75%;
-    }
-
-    // LARGE DESKTOP
-    @include mixins.xx-large {
-        width: 65%;
-    }
-
+    // .icon-box {
+    //     position: absolute;
+        
+    // }
 }
-
-
-
-
-
-
-// .navbar {
-//     height: 48px;
-//     width: 100%;
-//     color: variables.$color__navbar;
-
-//     // display: flex;
-//     // justify-content: space-between;
-//     // align-items: center;
-
-
-
-//     // &__logo,
-//     &__link {
-//         padding: 10px 25px 10px 0;
-//     }
-
-//     a {
-//         display: block;
-
-//         color: variables.$color__navbar;
-
-//         &:hover {
-//             color: variables.$color--primary;
-//         }
-
-//         &--light {
-//             color: variables.$color--primary-light;
-//         }
-//     }
-
-//     &__logo a {
-//         color: variables.$color--primary;
-//     }
-
-//     &-border {
-//         border-bottom: solid 1px variables.$color__navbar;
-//     }
-
-
-
-//     // MOBILE
-
-//     &__link:not(:first-child) {
-//         display: none;
-//     }
-
-//     a.icon {
-//         display: block;
-//         float: right;
-//     }
-
-//     &.responsive {
-//         position: relative;
-//     }
-
-//    &.responsive a.icon {
-//         position: absolute;
-//         right: 0;
-//         top: 0;
-//     }
-
-//     &.responsive a {
-//         float: none;
-//         display: block;
-//         text-align: left;
-//     }
-
-
-//     // TABLET
-//     @include mixins.medium {
-
-//         a.navbar__link {
-//             display: block;
-//         }
-
-//         a.icon {
-//             display: none;
-//         }
-
-//     }
-
-// }
-
-
-
-// .navbar-home {
-
-//     position: absolute;
-
-//     //MOBILE
-//     justify-content: end;
-
-//     .navbar__link {
-//         display: none;
-//     }
-
-//     // TABLET
-//     @include mixins.medium {
-//         justify-content: space-between;
-//         width: 85%;
-
-//         .navbar__link {
-//             display: block;
-//         }
-//     }
-
-//     // LAPTOP
-//     @include mixins.large {
-//         width: 75%;
-//     }
-
-//     // LARGE DESKTOP
-//     @include mixins.xx-large {
-//         width: 65%;
-//     }
-
-// }
-
-
