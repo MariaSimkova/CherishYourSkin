@@ -118,7 +118,7 @@ h3 {
 
 @media screen and (min-width: 768px) {
   .navbar__link {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -511,8 +511,7 @@ section.extra-padding {
     background-position: top left;
     background-size: 100%;
   }
-  .home-hero__title, .home-hero__slogan,
-.home-hero .button-container {
+  .home-hero__title, .home-hero__slogan {
     padding-top: 30px;
     width: 35%;
   }
@@ -520,6 +519,8 @@ section.extra-padding {
     font-size: 36px;
   }
   .home-hero .button-container {
+    width: 35%;
+    padding-top: 5px;
     padding-bottom: 0;
   }
 }
@@ -536,6 +537,9 @@ section.extra-padding {
   }
   .home-hero__slogan {
     font-size: 28px;
+  }
+  .home-hero .button-container {
+    padding-top: 30px;
   }
 }
 @media screen and (min-width: 1200px) {

@@ -19,7 +19,6 @@
         width: 100%;
     }
 
-    // &__logo,
     &__link,
     .icon {
         padding: 15px 25px 10px 0;
@@ -62,17 +61,12 @@
 
     a.icon {
         display: block;
-        // float: right;
         position: absolute;
         right: 5%;
     }
 
     // TABLET
     @include mixins.medium {
-
-        // a.navbar__link {
-        //     display: block;
-        // }
 
         &__logo {
             flex-basis: 40%;

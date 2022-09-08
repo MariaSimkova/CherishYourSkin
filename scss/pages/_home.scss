@@ -96,8 +96,7 @@
         background-size: 100%;
 
         &__title,
-        &__slogan,
-        .button-container {
+        &__slogan {
             padding-top: 30px;
             width: 35%;
         }
@@ -107,6 +106,8 @@
         }
 
         .button-container {
+            width: 35%;
+            padding-top: 5px;
             padding-bottom: 0;
         }
 
@@ -128,6 +129,10 @@
 
         &__slogan {
             font-size: 28px;
+        }
+
+        .button-container {
+            padding-top: 30px;
         }
     }
 
