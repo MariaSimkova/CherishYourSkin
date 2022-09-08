@@ -19,8 +19,6 @@
         width: 100%;
     }
 
-
-
     // &__logo,
     &__link,
     .icon {
@@ -75,12 +73,23 @@
         // a.navbar__link {
         //     display: block;
         // }
+
+        &__logo {
+            flex-basis: 40%;
+        }
+
         .link-box {
             display: flex;
         }
 
         a.icon {
             display: none;
+        }
+
+        &__wrapper {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
         }
 
     }
@@ -105,6 +114,10 @@
     
         //MOBILE
         justify-content: end;
+
+        .navbar__logo {
+            display: none;
+        }
     
         .navbar__link {
             display: none;
@@ -118,6 +131,10 @@
     
             .navbar__link {
                 display: block;
+            }
+
+            .navbar__logo {
+                display: none;
             }
             
         }   
@@ -150,7 +167,6 @@
 
     .navbar__wrapper {
         width: 100%;
-        display: flex;
         flex-direction: column;
     }
 
@@ -174,9 +190,4 @@
             padding-top: 30px;
         }
     }
-
-    // .icon-box {
-    //     position: absolute;
-        
-    // }
 }

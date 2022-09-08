@@ -294,11 +294,19 @@ section.extra-padding {
   right: 5%;
 }
 @media screen and (min-width: 768px) {
+  .navbar__logo {
+    flex-basis: 40%;
+  }
   .navbar .link-box {
     display: flex;
   }
   .navbar a.icon {
     display: none;
+  }
+  .navbar__wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
   }
 }
 @media screen and (min-width: 992px) {
@@ -319,6 +327,9 @@ section.extra-padding {
 .navbar.navbar-home {
   justify-content: end;
 }
+.navbar.navbar-home .navbar__logo {
+  display: none;
+}
 .navbar.navbar-home .navbar__link {
   display: none;
 }
@@ -330,6 +341,9 @@ section.extra-padding {
   }
   .navbar.navbar-home .navbar__link {
     display: block;
+  }
+  .navbar.navbar-home .navbar__logo {
+    display: none;
   }
 }
 @media screen and (min-width: 992px) {
@@ -353,7 +367,6 @@ section.extra-padding {
 .navbar.responsive .navbar__wrapper,
 .navbar-home.responsive .navbar__wrapper {
   width: 100%;
-  display: flex;
   flex-direction: column;
 }
 .navbar.responsive .navbar__logo,
