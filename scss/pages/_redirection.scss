@@ -1,0 +1,57 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+.redirection {
+
+    @include mixins.center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+
+    &__message {
+        @include mixins.center;
+        // background-color: white;
+        // border-radius: 10px;
+        // box-shadow: 4px 4px 10px variables.$color--shadow;
+
+        // MOBILE
+        padding: 20px 30px;
+
+         // TABLET
+         @include mixins.medium {
+            padding: 30px 40px;
+         }
+
+        // LAPTOP
+        @include mixins.large {
+
+        }
+
+        // LARGE DESKTOP
+        @include mixins.xx-large {
+            padding: 50px 100px;
+            width: 50%;
+        }
+
+
+        &-title {
+            padding: 50px 0 50px 0;
+        }
+
+        &-text {
+            padding: 50px 0;
+        }
+    }
+
+    .button {
+
+        &-container {
+            padding: 50px 0;
+        }
+
+        border: 0;
+        width: 150px;
+        color: white;
+    }
+
+}
