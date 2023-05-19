@@ -32,8 +32,37 @@ a:hover {
   color: variables.$color--primary;
 }
 
-ul, li {
+li {
   list-style: none;
+  list-style-position: inside;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+}
+
+.li {
+
+  &--disc {
+  list-style: disc;
+  list-style-position: inside;
+  }
+
+  &--circle {
+    list-style: circle;
+    list-style-position: inside;
+  }
+
+  &--square {
+    list-style: square;
+  }
+
+  &--next-level {
+    padding-top: 0.5rem;
+    padding-bottom: 0;
+  }
+
+  &--roman {
+    list-style: roman;
+  }
 }
 
 h1,
@@ -149,6 +178,10 @@ h3 {
 .text--first-paragraph,
 .link {
   padding: 30px 0;
+}
+
+.text--new-section {
+  padding-top: 15px;
 }
 
 .navbar{

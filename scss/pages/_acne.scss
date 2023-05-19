@@ -15,6 +15,10 @@
             grid-area: title;
         }
 
+        &__subtitle {
+            grid-area: subtitle;
+        }
+
         &__image-container {
             grid-area: image;
             display: flex;
