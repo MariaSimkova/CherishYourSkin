@@ -39,17 +39,22 @@
         "image image"
         "text text";
 
-        // &__image-container {
-        //     width: 100vw;
-        // }
+        // width: 100vw;
+        padding: 0;
 
         &__image {
             width: 100%;
+            border-radius: 0;
         }
 
         &__title {
             text-align: center;
             padding-bottom: 40px;
+        }
+
+        &__text-container {
+            padding-left: 35px;
+            padding-right: 35px;
         }
 
         @include mixins.small {

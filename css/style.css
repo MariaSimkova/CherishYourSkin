@@ -783,6 +783,7 @@ section.extra-padding {
   justify-self: center;
   grid-template-columns: 50% 50%;
   grid-template-areas: "title title" "image image" "text text";
+  padding: 0;
 }
 .about-content__title,
 .story-content__title {
@@ -808,11 +809,17 @@ section.extra-padding {
 .about-content__image,
 .story-content__image {
   width: 100%;
+  border-radius: 0;
 }
 .about-content__title,
 .story-content__title {
   text-align: center;
   padding-bottom: 40px;
+}
+.about-content__text-container,
+.story-content__text-container {
+  padding-left: 35px;
+  padding-right: 35px;
 }
 @media screen and (min-width: 528px) {
   .about-content__image,
