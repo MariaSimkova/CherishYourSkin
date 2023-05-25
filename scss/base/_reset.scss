@@ -35,7 +35,7 @@ a:hover {
 li {
   list-style: none;
   list-style-position: inside;
-  padding-left: 2rem;
+  padding-left: 1rem;
   padding-bottom: 1rem;
 }
 
@@ -62,6 +62,11 @@ li {
 
   &--roman {
     list-style: roman;
+  }
+
+  &--check {
+    list-style-type: "✓";
+    list-style-position: outside;
   }
 }
 
