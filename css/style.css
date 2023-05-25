@@ -434,14 +434,14 @@ section.extra-padding {
   padding: 40px 0;
 }
 
-.about .cta {
+.story .cta {
   background-image: url(/images/background__powder.png);
 }
-.about .cta .subtitle {
+.story .cta .subtitle {
   text-align: center;
 }
 
-.story .cta {
+.skin .cta {
   background-image: url(/images/background__skin.png);
 }
 
