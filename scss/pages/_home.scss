@@ -224,6 +224,10 @@
         @include mixins.center;
     }
 
+    .text--first-paragraph {
+        padding-top: 10px;
+    }
+
 
     // TABLET
     @include mixins.medium {
@@ -261,6 +265,10 @@
 
         &__link-container {
             display: block;
+        }
+
+        .text--first-paragraph {
+            padding-top: 30px;
         }
 
     }

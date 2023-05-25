@@ -637,6 +637,9 @@ section.extra-padding {
   flex-direction: column;
   align-items: center;
 }
+.home-about .text--first-paragraph {
+  padding-top: 10px;
+}
 @media screen and (min-width: 768px) {
   .home-about {
     display: block;
@@ -660,6 +663,9 @@ section.extra-padding {
   }
   .home-about__link-container {
     display: block;
+  }
+  .home-about .text--first-paragraph {
+    padding-top: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
