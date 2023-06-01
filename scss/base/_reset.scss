@@ -1,6 +1,7 @@
 @use '../abstracts/variables';
 @use '../abstracts/mixins';
 
+
 html { box-sizing: border-box; }
 *, ::after, ::before { box-sizing: inherit; }
 
@@ -143,9 +144,14 @@ h3 {
     color: variables.$color--light;
   }
 
+  &--highlight {
+    color: variables.$color--primary;
+  }
+
   &--center {
     text-align: center;
   }
+
 
   // MOBILE
   font-size: 16px;
