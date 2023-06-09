@@ -44,7 +44,7 @@ li {
 
   &--disc {
   list-style: disc;
-  list-style-position: inside;
+  list-style-position: outside;
   }
 
   &--circle {
@@ -121,7 +121,7 @@ h3 {
   padding-bottom: 10px;
 
   @include mixins.small {
-    font-size: 34px;
+    font-size: 32px;
     padding-bottom: 10px;
   }
 
@@ -150,6 +150,10 @@ h3 {
 
   &--center {
     text-align: center;
+  }
+
+  &--extra-padding-top {
+    padding-top: 15px;
   }
 
 

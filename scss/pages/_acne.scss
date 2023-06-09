@@ -3,7 +3,7 @@
 
 .acne {
 
-    display: grid;
+    // display: grid;
 
     &-content {
         
@@ -36,11 +36,11 @@
 
 
         // MOBILE
-        grid-template-columns: 50% 50%;
-        grid-template-areas: 
-        "title title"
-        "image image"
-        "text text";
+        // grid-template-columns: 50% 50%;
+        // grid-template-areas: 
+        // "title title"
+        // "image image"
+        // "text text";
 
         // &__image-container {
         //     width: 100vw;
