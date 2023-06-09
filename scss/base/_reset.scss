@@ -69,6 +69,7 @@ li {
     list-style-type: "✓";
     list-style-position: outside;
   }
+
 }
 
 h1,
@@ -105,7 +106,7 @@ h3 {
 
 .subtitle {
   color: variables.$color--primary;
-  padding-bottom: 20px;
+  padding: 15px 0 20px 0;
 
   &--light {
     color: variables.$color--light;
@@ -144,8 +145,12 @@ h3 {
     color: variables.$color--light;
   }
 
-  &--highlight {
+  &--highlight-primary {
     color: variables.$color--primary;
+  }
+
+  &--highlight-secondary {
+    color: variables.$color--primary-light;
   }
 
   &--center {

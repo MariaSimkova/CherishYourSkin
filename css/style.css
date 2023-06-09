@@ -97,7 +97,7 @@ h3 {
 
 .subtitle {
   color: #CA6374;
-  padding-bottom: 20px;
+  padding: 15px 0 20px 0;
   font-size: 30px;
   padding-bottom: 10px;
 }
@@ -129,8 +129,11 @@ h3 {
 .text--light {
   color: #F2EAE8;
 }
-.text--highlight {
+.text--highlight-primary {
   color: #CA6374;
+}
+.text--highlight-secondary {
+  color: #D69596;
 }
 .text--center {
   text-align: center;
@@ -900,7 +903,6 @@ section.extra-padding {
 
 .acne-content {
   max-width: 1200px;
-  display: grid;
   justify-self: center;
 }
 .acne-content__title {
@@ -949,9 +951,6 @@ section.extra-padding {
   }
   .acne-content__title {
     padding-bottom: 85px;
-  }
-  .acne-content .text--first-paragraph {
-    padding-top: 0;
   }
 }
 
