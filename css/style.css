@@ -141,6 +141,9 @@ h3 {
 .text--extra-padding-top {
   padding-top: 15px;
 }
+.text-bubble {
+  padding: 0;
+}
 @media screen and (min-width: 528px) {
   .text {
     font-size: 19px;
@@ -832,6 +835,13 @@ section.extra-padding {
 .story-content__text-container {
   grid-area: text;
 }
+.skin-content__text-bubble,
+.story-content__text-bubble {
+  background-color: #f7f3f1;
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 2rem 0;
+}
 .skin-content__image,
 .story-content__image {
   border-radius: 10px;
@@ -914,6 +924,9 @@ section.extra-padding {
   }
 }
 
+.acne {
+  display: grid;
+}
 .acne-content {
   max-width: 1200px;
   justify-self: center;
@@ -937,9 +950,12 @@ section.extra-padding {
 .acne-content__image {
   border-radius: 10px;
   justify-self: center;
-}
-.acne-content__image {
   width: 100%;
+}
+.acne-content__chart {
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 .acne-content__title {
   text-align: center;
