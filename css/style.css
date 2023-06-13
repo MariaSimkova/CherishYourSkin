@@ -210,6 +210,9 @@ section {
 section.extra-padding {
   padding-top: 100px;
 }
+section.extra-padding-bottom {
+  padding-bottom: 100px;
+}
 
 .button {
   display: block;
