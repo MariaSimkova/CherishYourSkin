@@ -837,6 +837,12 @@ section.extra-padding {
   border-radius: 10px;
   justify-self: center;
 }
+.skin-content__chart,
+.story-content__chart {
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
 .skin-content .about-content__image--tablet,
 .skin-content .skin-content__image--tablet,
 .story-content .about-content__image--tablet,
@@ -890,6 +896,13 @@ section.extra-padding {
   .skin-content__image,
   .story-content__image {
     display: none;
+  }
+  .skin-content__chart,
+  .story-content__chart {
+    width: 50%;
+    margin-right: 15px;
+    margin-bottom: 0;
+    float: left;
   }
   .skin-content__title,
   .story-content__title {

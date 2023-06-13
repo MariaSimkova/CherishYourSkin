@@ -31,6 +31,12 @@
             justify-self: center;
         }
 
+        &__chart {
+            border-radius: 10px;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
 
         // MOBILE
         grid-template-columns: 50% 50%;
@@ -100,6 +106,13 @@
                 // max-width: 80%;
                 // border-radius: 10px;
                 // float: left;
+            }
+
+            &__chart {
+                width: 50%;
+                margin-right: 15px;
+                margin-bottom: 0;
+                float: left;
             }
 
             &__title {
