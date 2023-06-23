@@ -141,6 +141,9 @@ h3 {
 .text--extra-padding-top {
   padding-top: 15px;
 }
+.text--extra-padding-left {
+  padding-left: 15px;
+}
 .text-bubble {
   padding: 0;
 }
@@ -1015,7 +1018,6 @@ section.extra-padding-bottom {
 }
 .services__card-container .card {
   display: flex;
-  align-items: center;
   margin: 40px 0;
   background-color: white;
   box-shadow: 4px 4px 10px #DBD9DA;
@@ -1028,15 +1030,18 @@ section.extra-padding-bottom {
 }
 .services__card-container .card__info-price {
   color: #90ABC3;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
 }
 .services__card-container .card__info-description {
   color: #6B7689;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
-.services__card-container .card .card__image {
+.services__card-container .card .card__image-small {
   width: 100%;
   border-radius: 9px 9px 0 0;
+}
+.services__card-container .card .card__image-large {
+  display: none;
 }
 .services__card-container .card .card__info {
   padding: 20px;
@@ -1048,15 +1053,23 @@ section.extra-padding-bottom {
 .services__card-container .card .card__info-title {
   font-size: 20px;
 }
+.services__card-container .card .card__link {
+  display: block;
+}
 @media screen and (min-width: 768px) {
   .services__card-container .card {
     flex-direction: row;
     width: 730px;
   }
-  .services__card-container .card .card__image {
+  .services__card-container .card .card__image-small {
+    display: none;
+  }
+  .services__card-container .card .card__image-large {
+    display: block;
     border-radius: 9px 0 0 9px;
     flex-basis: 55%;
     width: 250px;
+    height: 100%;
   }
   .services__card-container .card .card__info {
     padding: 20px 30px;
@@ -1065,12 +1078,15 @@ section.extra-padding-bottom {
   .services__card-container .card .card__info-title {
     padding-bottom: 15px;
   }
+  .services__card-container .card .card__info-description text {
+    font-size: 16px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .services__card-container .card {
     width: 1000px;
   }
-  .services__card-container .card .card__image {
+  .services__card-container .card .card__image-large {
     flex-basis: 35%;
     max-width: 35%;
   }

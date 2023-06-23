@@ -1,0 +1,47 @@
+---
+layout: layouts/en-layout.njk
+title: Cherish your skin
+---
+
+<div class="services">
+
+    <section class="services__content extra-padding">
+
+        <h1 class="title title--center">What I can do for you</h1>
+
+        <div class="services__card-container">
+
+            <div class="card">
+
+                <img src="/images/services__card1.jpg" alt="Individual skincare plan" class="card__image-small">
+
+                <img src="/images/services__card1-large.jpg" alt="Individual skincare plan" class="card__image-large">
+
+                <div class="card__info">
+                
+                    <h3 class="card__info-title">Individual skincare plan</h3>
+
+                    <p class="card__info-price">150 EUR   |   160 USD</p>
+
+                    <div class="card__info-description">
+                        <ol class="text--dark text--extra-padding-left">
+                            <li class="li--check">One hour online consultation video call</li>
+                            <li class="li--check">Two weeks email support</li>
+                            <li class="li--check">Detailed tailored skincare routine</li>
+                            <li class="li--check">30 minutes follow up call after two months after end of the support</li>
+                        </ol>
+                    </div>
+
+                    <a href="/en/.../" class="card__link text text--highlight-secondary">Read more...</a>
+
+                    <a href="/en/contact/" class="button button--card">BOOK NOW</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
