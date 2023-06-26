@@ -7,7 +7,7 @@ title: Cherish your skin
 
     <section class="services__content extra-padding">
 
-        <h1 class="title title--center">What I can do for you</h1>
+        <h1 class="title title--center">Individual skincare plan</h1>
 
         <div class="services__card-container">
 
@@ -32,13 +32,21 @@ title: Cherish your skin
                         </ol>
                     </div>
 
-                    <a href="/en/.../" class="card__link text text--highlight-secondary">Read more...</a>
-
                     <a href="/en/contact/" class="button button--card">BOOK NOW</a>
 
                 </div>
 
             </div>
+
+        </div>
+
+        <div class="skin__text-bubble">
+
+            <p class="text text--dark"><span class="text--highlight-secondary">The epidermis</span> is the outermost layer of the skin, which serves as the main barrier between our body and the external environment. It is mainly composed of <span class="text--highlight-secondary">keratinocytes</span>, which are constantly shed and replaced by new cells from the lower layer of the epidermis. The epidermis also contains <span class="text--highlight-secondary">melanocytes</span>, which produce the pigment melanin that gives our skin its color.</p>
+
+            <p class="text text--dark">Beneath the epidermis lies <span class="text--highlight-secondary">the dermis</span>, where we find blood vessels, nerves, hair follicles, sweat glands, and sebaceous glands. The dermis is composed of <span class="text--highlight-secondary">collagen and elastin fibers</span>, which provide the skin with strength and elasticity. It is also rich in <span class="text--highlight-secondary">hyaluronic acid</span>, a substance that helps keep our skin hydrated and plump.</p>
+
+            <p class="text text-bubble text--dark"><span class="text--highlight-secondary">The hypodermis</span>, also known as the subcutaneous layer, is the deepest layer of the skin. It is mainly composed of <span class="text--highlight-secondary">adipose cells</span> and <span class="text--highlight-secondary">connective tissue</span> and serves as a cushion that helps protect our internal organs and bones. The hypodermis also helps regulate our body temperature by providing insulation against the cold.</p>
 
         </div>
 
