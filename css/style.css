@@ -352,6 +352,13 @@ section.extra-padding-bottom {
 .navbar .icon {
   font-size: 20px;
 }
+.navbar__language-icon {
+  height: 1rem;
+  color: #634B45;
+}
+.navbar__language-icon:hover {
+  color: #CA6374;
+}
 .navbar .link-box {
   display: none;
 }
