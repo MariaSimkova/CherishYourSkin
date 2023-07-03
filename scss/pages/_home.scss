@@ -170,9 +170,14 @@
     padding-top: 80px;
     padding-bottom: 80px;
 
+    // &__subtitle-container {
+    //     display: flex;
+    //     @include mixins.center;
+    // }
+
     &__subtitle {
         grid-area: subtitle;
-        align-self: center;
+        text-align: center;
     }
 
     &__image-container {

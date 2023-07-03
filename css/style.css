@@ -647,7 +647,7 @@ section.extra-padding-bottom {
 }
 .home-about__subtitle {
   grid-area: subtitle;
-  align-self: center;
+  text-align: center;
 }
 .home-about__image-container {
   grid-area: image;
