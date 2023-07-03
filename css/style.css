@@ -354,10 +354,9 @@ section.extra-padding-bottom {
 }
 .navbar__language-icon {
   height: 1rem;
-  color: #634B45;
 }
 .navbar__language-icon:hover {
-  color: #CA6374;
+  background-color: #F2EAE8;
 }
 .navbar .link-box {
   display: none;

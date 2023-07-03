@@ -50,10 +50,9 @@
 
     &__language-icon {
         height: 1rem;
-        color: variables.$color__navbar;
 
         &:hover {
-            color: variables.$color--primary;
+            background-color: variables.$color--light;
         }
     }
 
