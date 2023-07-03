@@ -781,6 +781,7 @@ section.extra-padding-bottom {
 .home-services .subtitle {
   color: #557D8E;
   padding-top: 20px;
+  text-align: center;
 }
 .home-services__card {
   display: flex;
