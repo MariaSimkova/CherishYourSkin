@@ -243,7 +243,8 @@
 
         // gap: 15px;
 
-        display: block;
+        display: flex;
+        @include mixins.center;
 
         &__subtitle,
         &__text-container {
@@ -262,7 +263,7 @@
         &__image--tablet {
             display: block;
             max-width: 45%;
-            max-height: 525px;
+            max-height: 500px;
             border-radius: 15px;
             float: left;
             margin: 0 2rem 1rem 0;

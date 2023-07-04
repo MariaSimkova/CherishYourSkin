@@ -687,7 +687,10 @@ section.extra-padding-bottom {
 }
 @media screen and (min-width: 768px) {
   .home-about {
-    display: block;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .home-about__subtitle, .home-about__text-container {
     justify-self: start;
@@ -701,7 +704,7 @@ section.extra-padding-bottom {
   .home-about__image--tablet {
     display: block;
     max-width: 45%;
-    max-height: 525px;
+    max-height: 500px;
     border-radius: 15px;
     float: left;
     margin: 0 2rem 1rem 0;
