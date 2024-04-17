@@ -346,6 +346,9 @@ section.extra-padding-bottom {
 .navbar a.navbar__logo {
   color: #CA6374;
 }
+.navbar__logo-icon {
+  height: 44px;
+}
 .navbar-border {
   border-bottom: solid 1px #634B45;
 }

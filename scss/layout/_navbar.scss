@@ -40,6 +40,10 @@
         color: variables.$color--primary;
     }
 
+    &__logo-icon {
+        height: 44px;
+    }
+
     &-border {
         border-bottom: solid 1px variables.$color__navbar;
     }
