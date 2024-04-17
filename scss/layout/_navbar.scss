@@ -41,7 +41,7 @@
     }
 
     &__logo-icon {
-        height: 48px;
+        height: 52px;
     }
 
     &-border {
@@ -58,6 +58,10 @@
         &:hover {
             background-color: variables.$color--light;
         }
+    }
+
+    &__wrapper {
+        @include mixins.center;
     }
 
 

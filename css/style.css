@@ -347,7 +347,7 @@ section.extra-padding-bottom {
   color: #CA6374;
 }
 .navbar__logo-icon {
-  height: 48px;
+  height: 52px;
 }
 .navbar-border {
   border-bottom: solid 1px #634B45;
@@ -360,6 +360,11 @@ section.extra-padding-bottom {
 }
 .navbar__language-icon:hover {
   background-color: #F2EAE8;
+}
+.navbar__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .navbar .link-box {
   display: none;
